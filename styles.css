@@ -1,0 +1,121 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+/* Container for the content */
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Header */
+h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Button group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#start-btn {
+  background-color: #28a745;
+}
+
+#start-btn:hover {
+  background-color: #218838;
+}
+
+#stop-btn {
+  background-color: #dc3545;
+}
+
+#stop-btn:hover {
+  background-color: #c82333;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Output box */
+.output-section {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffddcc;
+}
+
+.output-box {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  min-height: 100px;
+  color: #fff;
+  font-size: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: background 0.3s ease-in-out;
+}
+
+.output-box:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+      width: 90%;
+      padding: 1.5rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.5rem;
+  }
+}
