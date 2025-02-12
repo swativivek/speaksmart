@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Speech to Text with Grammar Correction</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Live Speech to Text with Grammar Correction</h1>
+    
+    <div class="button-group">
+      <button id="start-btn">Start Recording</button>
+      <button id="stop-btn" disabled>Stop Recording</button>
+    </div>
+
+    <div class="output-section">
+      <h2>Original Transcription</h2>
+      <div id="output" class="output-box">Your transcript will appear here...</div>
+    </div>
+
+    <div class="output-section">
+      <h2>Corrected Grammar</h2>
+      <div id="corrected-output" class="output-box">The corrected text will appear here...</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
